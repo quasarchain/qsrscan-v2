@@ -12,7 +12,26 @@ defmodule BlockScoutWeb.LayoutView do
     %{
       title: "POA",
       url: "https://blockscout.com/poa/core"
-    }
+    },
+    %{
+     title: "QSR",
+     url: "#",
+     test_net?: true
+   },
+   %{
+     title: "xDai",
+     url: "https://blockscout.com/xdai/mainnet"
+   },
+   %{
+     title: "Ethereum Classic",
+     url: "https://blockscout.com/etc/mainnet",
+     other?: true
+   },
+   %{
+     title: "RSK",
+     url: "https://blockscout.com/rsk/mainnet",
+     other?: true
+   }
     ]
 
   alias BlockScoutWeb.SocialMedia
@@ -65,7 +84,7 @@ defmodule BlockScoutWeb.LayoutView do
     ### Environment
     * Elixir Version: #{System.version()}
     * Erlang Version: #{System.otp_release()}
-    * BlockScout Version: #{version()}
+    * QSRScan Version: #{version()}
 
     * User Agent: `#{user_agent}`
 
@@ -96,7 +115,7 @@ defmodule BlockScoutWeb.LayoutView do
           nil
 
         release_link_env_var == "" || release_link_env_var == nil ->
-          "https://github.com/blockscout/blockscout/releases/tag/" <> version
+          "https://github.com/quasarchain/qsrscan-v2/releases/tag/" <> version
 
         true ->
           release_link_env_var
