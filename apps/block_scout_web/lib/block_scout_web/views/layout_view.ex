@@ -40,6 +40,10 @@ defmodule BlockScoutWeb.LayoutView do
     Keyword.get(application_config(), :logo) || "/images/blockscout_logo.png"
   end
 
+  def subnetwork_title do
+    Keyword.get(application_config(), :subnetwork) || "QSR"
+  end
+
   def logo_footer do
     Keyword.get(application_config(), :logo_footer) || Keyword.get(application_config(), :logo) ||
       "/images/blockscout_logo.png"
