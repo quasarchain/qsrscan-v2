@@ -1,10 +1,10 @@
 # App artifacts
-/_build
+_build
 /apps/*/cover
 /apps/*/logs
 /cover
 /db
-/deps
+
 /doc
 /*.ez
 /logs
@@ -37,7 +37,7 @@ screenshots/
 # Sobelow
 .sobelow
 
-# osx 
+# osx
 .DS_Store
 
 # mix phx.gen.cert self-signed certs for dev

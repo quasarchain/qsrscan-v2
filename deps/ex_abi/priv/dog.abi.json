@@ -1,0 +1,58 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "at",
+        "type": "address"
+      },
+      {
+        "name": "loudly",
+        "type": "bool"
+      }
+    ],
+    "name": "bark",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "rollover",
+    "outputs": [
+      {
+        "name": "is_a_good_boy",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_from_human",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_number",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"name": "_belly",
+				"type": "bool"
+			}
+		],
+		"name": "WantsPets",
+		"type": "event"
+	}
+]
