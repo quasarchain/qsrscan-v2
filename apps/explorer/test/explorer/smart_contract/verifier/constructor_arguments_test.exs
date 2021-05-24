@@ -1031,7 +1031,7 @@ defmodule Explorer.SmartContract.Verifier.ConstructorArgumentsTest do
           * be displayed to a user as `5,05` (`505 / 10 ** 2`).
           *
           * Tokens usually opt for a value of 18, imitating the relationship between
-          * Ether and Wei.
+          * QSR and Wei.
           *
           * > Note that this information is only used for _display_ purposes: it in
           * no way affects any of the arithmetic of the contract, including
