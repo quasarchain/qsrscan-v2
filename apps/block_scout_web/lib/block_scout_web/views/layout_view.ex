@@ -9,29 +9,16 @@ defmodule BlockScoutWeb.LayoutView do
 
   @issue_url "#"
   @default_other_networks [
-    %{
+  %{
+   title: "QSR",
+   url: "#",
+   test_net?: true
+ },
+     %{
       title: "POA",
       url: "https://blockscout.com/poa/core"
-    },
-    %{
-     title: "QSR",
-     url: "#",
-     test_net?: true
-   },
-   %{
-     title: "xDai",
-     url: "https://blockscout.com/xdai/mainnet"
-   },
-   %{
-     title: "Ethereum Classic",
-     url: "https://blockscout.com/etc/mainnet",
-     other?: true
-   },
-   %{
-     title: "RSK",
-     url: "https://blockscout.com/rsk/mainnet",
-     other?: true
-   }
+    }
+
     ]
 
   alias BlockScoutWeb.SocialMedia
