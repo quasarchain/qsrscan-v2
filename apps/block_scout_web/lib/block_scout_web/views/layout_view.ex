@@ -37,7 +37,7 @@ defmodule BlockScoutWeb.LayoutView do
   alias BlockScoutWeb.SocialMedia
 
   def logo do
-    Keyword.get(application_config(), :logo) || "/images/blockscout_logo.png"
+    Keyword.get(application_config(), :logo) || "/images/blockscout_logo.svg"
   end
 
   def subnetwork_title do
@@ -46,7 +46,7 @@ defmodule BlockScoutWeb.LayoutView do
 
   def logo_footer do
     Keyword.get(application_config(), :logo_footer) || Keyword.get(application_config(), :logo) ||
-      "/images/blockscout_logo.png"
+      "/images/blockscout_logo.svg"
   end
 
   def logo_text do
