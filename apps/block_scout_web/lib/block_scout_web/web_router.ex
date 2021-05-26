@@ -25,12 +25,12 @@ defmodule BlockScoutWeb.WebRouter do
     resources("/", ChainController, only: [:show], singleton: true, as: :chain)
 
     resources("/market-history-chart", Chain.MarketHistoryChartController,
-      only: [:index],
+      only: [:show],
       singleton: true
     )
 
     resources("/transaction-history-chart", Chain.TransactionHistoryChartController,
-      only: [:index],
+     only: [:show],
       singleton: true
     )
 
